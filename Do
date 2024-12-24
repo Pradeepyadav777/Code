@@ -1,0 +1,20 @@
+[18/12, 12:18] +91 90004 34681: FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY hello.py /app
+
+CMD ["python", "hello.py"]
+[18/12, 12:18] +91 90004 34681: rename dockerfile.txt dockerfile
+[18/12, 12:18] +91 90004 34681: FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY hello.py /app
+
+CMD ["python", "hello.py"]
+[18/12, 12:18] +91 90004 34681: docker build -t python313-sai .
+[18/12, 12:18] +91 90004 34681: docker login
+[18/12, 12:18] +91 90004 34681: docker tag python313-yesh sailokeshnalabothu/python313-yesh
+[18/12, 12:19] +91 90004 34681: docker push sailokeshnalabothu/python313-yesh
+[18/12, 12:19] +91 90004 34681: docker run python313-sai
